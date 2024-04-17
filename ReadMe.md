@@ -1,0 +1,1 @@
+Generic local setup to work on data projects locally using docker.
