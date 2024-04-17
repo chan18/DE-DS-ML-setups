@@ -3,7 +3,7 @@ from fastapi import FastAPI
 import redis
 
 # r = redis.Redis(host="redis123", port=6379)
-# app = FastAPI()
+app = FastAPI()
 
 # import debugpy
 
@@ -11,10 +11,10 @@ import redis
 # print("Waiting for client to attach...")
 # debugpy.wait_for_client()
 
-
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
+
 
 
 @app.get("/hits")
